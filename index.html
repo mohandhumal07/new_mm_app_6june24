@@ -1,0 +1,33 @@
+<html>
+<head>
+			<title> New MM App by Kamal Sir </title>
+			<style>
+						* {font-size:40px; font-family:Arial;}
+						body {background-color:yellow;}
+						h1 {font-family:Ink Free; background-color: purple ; width:700px; }
+			</style>
+</head>
+
+<body>
+<center>
+			<h1> New Motivational Msg Wallah </h1>
+			<h2 id = "msg"/>
+
+			<script>
+						function show()
+						{
+							
+							let msg = document.getElementById("msg");
+							let messages = ["We cannot solve problems with the kind of thinking we employed when we came up with them.",
+"Learn as if you will live forever, live like you will die tomorrow.","When you give joy to other people, you get more joy in return. You should give a good thought to the happiness that you can give out.","When you change your thoughts, remember to also change your world.","It is only when we take chances that our lives improve. The initial and the most difficult risk we need to take is to become honest.","Nature has given us all the pieces required to achieve exceptional wellness and health, but has left it to us to put these pieces together.","Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable","Concentrate all your thoughts upon the work in hand. The sun’s rays do not burn until brought to a focus."];
+							let r = parseInt(Math.random()*messages.length);
+							msg.innerHTML = "=>" + " " + messages[r];
+		
+						}
+						show();
+						setInterval(show,8000);
+						
+			</script>
+</center>
+</body>
+</html>						
